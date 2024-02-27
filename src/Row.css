@@ -1,0 +1,54 @@
+.row{
+    color: #fff;
+    margin-left: 20px;
+}
+
+.scrollable-container {
+    display: flex;
+    overflow-x: auto; /* Horizontal scrolling */
+    overflow-y: hidden; /* Hiding vertical scrollbar */
+    white-space: nowrap; /* Prevent wrapping */
+    padding: 20px;
+}
+  
+.scrollable-item {
+    flex: 0 0 auto; /* Flex item won't grow or shrink */
+    /* width: 11%; */
+ }
+  
+.scrollable-container::-webkit-scrollbar{
+    display: none;
+}
+
+.row_poster{
+    max-height: 250px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 450ms;
+}
+
+.row_poster:hover{
+    opacity: 0.6;
+    background-color: #fff;
+}
+
+.row_posterLarge{
+    max-height: 250px;
+    border-radius: 10px;
+}
+
+.scrollable-item:hover{
+    transform: scale(1.08);
+    opacity: 1;
+    transition: transform 450ms;
+}
+
+.movie_name{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    text-wrap: wrap;
+    width: 60%;
+}
+
